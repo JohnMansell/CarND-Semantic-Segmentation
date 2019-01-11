@@ -4,7 +4,9 @@
 John Mansell
 ---
 
-[](./examples/write_up_images/um_000015.png)
+![](./examples/write_up_images/um_000015.png)
+
+<video src='./video_8.avi' poster="./examples/write_up_image/um_000015.png" width="320" height="200" controls preload></video>
 
 
 ### Objective
