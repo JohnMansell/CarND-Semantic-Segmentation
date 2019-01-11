@@ -3,20 +3,19 @@
 ### Semantic Segmentation
 John Mansell
 ---
-
+> 
+### Objective
 > ![](./examples/write_up_images/um_000015.png)
 > 
-> ### Objective
 > The goal of this project is to emulate the rusults from 
 [Fully Convolutional Networks for Semantic Segmentation](https://arxiv.org/pdf/1605.06211.pdf) by Shelhamer et al.
 Their neural network was able to extend the pretrained vgg-16 model in order to add spatial information to the network.
 Shelhamer et al. was able to achieve pixel by pixel classification of images. This project attempts to provide pixel by
 pixel recognition of road / not-road pixels in a series of images taken from a car driving along the road.
 >
- ---
-> # Methods
+# Methods
 > 
-> ### Architecture
+### Architecture
 > The pre-trained vgg-16 model was downloaded and used as the starting point. Input, layer 3, 4 and 7 tensors
 were all extracted from the original graph. These layers were passed to the layers function. The layers function
 built new layers following the architecture in the original paper.
@@ -26,11 +25,11 @@ also added a skip layer, which was the sum of the up-sampled layer and the layer
 another up-sampling layer, a conv 2d transpose of the skip layer, followed by another skip layer. Finally, the last skip
 layer was up-sampled by taking a kernel of 16 with a stride of 8.
 >
-> ### Training
+### Training
 > The Neural Network was trained using an Adam Optimizer on a softmax cross entropy with logits function. The images and
 pixelwise labels were provided by Udacity.
 > 
-> ### Tuning
+### Tuning
 > After testing a number of different Hyper Parameters, the values that I used were:  
 > * L2_REG = 1e-3  
 > * STDEV = 1e-2  
@@ -44,7 +43,7 @@ pixelwise labels were provided by Udacity.
 > *Note, I would have preferred to use a larger batch size, but the GPU memory caused a crash when I used a batch size 
 greater than 8.*
 > 
-> # Sample Output
+# Sample Output
 >
 > ![](./examples/write_up_images/umm_000019.png)  
 > 
@@ -55,7 +54,7 @@ greater than 8.*
 > ![](./examples/write_up_images/uu_000097.png)
 > 
 > A video of the output images can be found at [video_8.avi](video_8.avi)
-> # Acknowledgements
+# Acknowledgements
 > The whole project is based on recreating the neural network described in the paper by Shelhamer et al.
 > 
 > The foundation of the project was based on the walkthrough provided by Udacity's Q and A video, as well as the
