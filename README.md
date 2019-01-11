@@ -45,6 +45,8 @@ greater than 8.*
 > 
 # Sample Output
 >
+> A video of the output images can be found at [video_8.avi](video_8.avi)
+> 
 > ![](./examples/write_up_images/umm_000019.png)  
 > 
 > ![](./examples/write_up_images/uu_000089.png)
@@ -53,7 +55,7 @@ greater than 8.*
 > 
 > ![](./examples/write_up_images/uu_000097.png)
 > 
-> A video of the output images can be found at [video_8.avi](video_8.avi)
+
 # Acknowledgements
 > The whole project is based on recreating the neural network described in the paper by Shelhamer et al.
 > 
