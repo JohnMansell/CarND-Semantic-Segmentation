@@ -47,13 +47,13 @@ greater than 8.*
 >
 > A video of the output images can be found at [video_8.avi](video_8.avi)
 > 
-> ![](WriteUp/write_up_images/umm_000019.png)  
+> ![](write_up_images/um_000015.png)  
 > 
-> ![](WriteUp/write_up_images/uu_000089.png)
+> ![](write_up_images/uu_000089.png)
 > 
-> ![](WriteUp/write_up_images/uu_000092.png)
+> ![](write_up_images/uu_000092.png)
 > 
-> ![](WriteUp/write_up_images/uu_000097.png)
+> ![](write_up_images/uu_000097.png)
 > 
 
 # Acknowledgements
